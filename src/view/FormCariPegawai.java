@@ -96,12 +96,11 @@ public class FormCariPegawai extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(51, 51, 0));
         jLabel4.setText("Cari Data Pegawai :");
-        jLabel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jLabel4.setMaximumSize(new java.awt.Dimension(97, 20));
 
         BtnCari.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         BtnCari.setText("Cari");
-        BtnCari.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BtnCari.setBorder(null);
         BtnCari.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnCariActionPerformed(evt);
@@ -110,7 +109,7 @@ public class FormCariPegawai extends javax.swing.JFrame {
 
         BtnKeluar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         BtnKeluar.setText("Keluar");
-        BtnKeluar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BtnKeluar.setBorder(null);
         BtnKeluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnKeluarActionPerformed(evt);

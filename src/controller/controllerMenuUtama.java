@@ -9,6 +9,7 @@ import view.FormLupa;
 import view.FormPegawai;
 import view.MenuUtama;
 import view.FormCariPegawai;
+import view.FormCariBarang;
 
 
 /**
@@ -21,7 +22,8 @@ public class controllerMenuUtama {
     FormPegawai fPegawai;
     FormLupa fLupaPass;
     FormCariPegawai fCariPegawai;
-    
+    FormCariBarang fCariBarang;
+
     public controllerMenuUtama(MenuUtama frame) {
         this.frame = frame;
     }
@@ -45,6 +47,11 @@ public class controllerMenuUtama {
     public void masukCariPegawai() {
         fCariPegawai = new FormCariPegawai();
         fCariPegawai.setVisible(true);
+    }
+    
+    public void masukCariBarang() {
+        fCariBarang = new FormCariBarang();
+        fCariBarang.setVisible(true);
     }
     
     public void keluar() {

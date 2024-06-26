@@ -35,6 +35,7 @@ public class MenuUtama extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         masterLupaPass = new javax.swing.JMenuItem();
         pencarian = new javax.swing.JMenu();
+        cariBarang = new javax.swing.JCheckBoxMenuItem();
         cariPegawai = new javax.swing.JMenuItem();
         keluar = new javax.swing.JMenu();
 
@@ -70,6 +71,14 @@ public class MenuUtama extends javax.swing.JFrame {
         jMenuBar1.add(master);
 
         pencarian.setText("Pencarian");
+
+        cariBarang.setText("Cari Barang");
+        cariBarang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cariBarangActionPerformed(evt);
+            }
+        });
+        pencarian.add(cariBarang);
 
         cariPegawai.setText("Cari Pegawai");
         cariPegawai.addActionListener(new java.awt.event.ActionListener() {
@@ -118,8 +127,13 @@ public class MenuUtama extends javax.swing.JFrame {
 
     private void cariPegawaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariPegawaiActionPerformed
         // TODO add your handling code here:
-                cMenu.masukCariPegawai();
+        cMenu.masukCariPegawai();
     }//GEN-LAST:event_cariPegawaiActionPerformed
+
+    private void cariBarangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cariBarangActionPerformed
+        // TODO add your handling code here:
+        cMenu.masukCariBarang();
+    }//GEN-LAST:event_cariBarangActionPerformed
 
     /**
      * @param args the command line arguments
@@ -157,6 +171,7 @@ public class MenuUtama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBoxMenuItem cariBarang;
     private javax.swing.JMenuItem cariPegawai;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
